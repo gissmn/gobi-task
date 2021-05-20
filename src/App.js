@@ -122,7 +122,7 @@ function App() {
               <img className="img" alt="3" src={pic2} />
             </div>
           </div>
-          <div style={{ alignSelf: "flex-end" }}>
+          <div className="section_right_text">
             Infusion of summer pieces and cashmere silk blends.
           </div>
         </div>
