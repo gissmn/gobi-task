@@ -239,11 +239,12 @@
 }
 .catItem {
   position: relative;
-  margin: 0 0.5srem;
+  margin: 0 0.5rem;
   display: flex;
 }
 .catItems {
   display: flex;
+  align-items: flex-start;
 }
 .category > h2 {
   display: none;
@@ -264,6 +265,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .catName h2 {
   padding: 1rem;
   font-size: 2rem;
