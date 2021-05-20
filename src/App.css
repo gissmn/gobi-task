@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+
 .container {
   /* text-align: center;
   background-color: aqua; */
@@ -16,12 +18,13 @@
 .link {
   text-decoration: none;
   color: #4f5255;
-  margin: 1rem 0;
+  margin: 0.7rem 0;
 }
 /* Header styling */
 .header {
   background: url(./assets/img/cover.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
   /* height: 40rem; */
   /* width: 100%; */
 }
@@ -83,6 +86,9 @@
   text-decoration: none;
   color: white;
 }
+.burger_menu {
+  display: none;
+}
 .Menu a:hover,
 .Menu a:active {
   border-bottom: 2px solid #f68a90;
@@ -95,7 +101,6 @@
   padding: 1rem 0;
   font-size: 0.5rem;
   align-items: center;
-  /* height: 2rem; */
 }
 .userPanel {
   display: flex;
@@ -150,10 +155,11 @@
   font-weight: bolder;
 }
 .cover_right h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .saleTxt {
   color: #e85757;
+  font-weight: normal;
   font-family: Mr Dafoe;
   font-size: 3rem;
   transform: rotate(-9deg);
@@ -172,7 +178,7 @@
 }
 .btn {
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.7rem;
   padding: 1rem 2rem;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -199,7 +205,7 @@
 }
 .section_right {
   display: flex;
-  /* flex: 1; */
+  flex: 1;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -243,7 +249,7 @@
   position: absolute;
   bottom: 1rem;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: center;
 }
 .catName {
@@ -252,8 +258,8 @@
   align-items: center;
 }
 .catName h2 {
-  padding: 2rem;
-  font-size: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
 }
 /* Products styling */
 .products {
@@ -304,7 +310,7 @@
 .abts {
   position: absolute;
   display: flex;
-  right: -60%;
+  right: -50%;
   bottom: 2rem;
   justify-content: flex-end;
 }
@@ -356,10 +362,15 @@
   display: flex;
   flex: 1;
   background-color: white;
+  justify-content: space-around;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
 }
 .social_menu {
   padding: 0 2rem;
+}
+.social_menu a {
+  font-size: 1.5rem;
+  margin: 0.3rem;
 }
 .footer_item {
   display: flex;
@@ -369,4 +380,45 @@
 }
 .footer_item h3 {
   margin: 2rem 0;
+}
+.copyright {
+  padding: 2rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .return {
+    display: none;
+  }
+  .navMenu .userPanel .search {
+    display: none;
+  }
+  .navMenu .Menu ul {
+    display: none;
+  }
+  .burger_menu {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .productItems {
+    width: 100%;
+  }
+  .abts {
+    display: none;
+  }
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_right {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+  .social_menu {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
 }

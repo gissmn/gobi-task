@@ -4,8 +4,9 @@ import {
   VscHeart,
   VscChromeClose,
   VscArrowRight,
+  VscMenu,
 } from "react-icons/vsc";
-import { BsBagFill } from "react-icons/bs";
+import { BsBagFill, BsSearch } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "./gobi.svg";
 import pic from "./assets/img/side1.png";
@@ -37,6 +38,10 @@ function App() {
         </div>
         <div className="navMenu">
           <div className="Menu">
+            <div className="burger_menu">
+              <VscMenu style={{ marginRight: "2rem" }} />
+              <BsSearch />
+            </div>
             <ul>
               <li>
                 <a href="/">WOMEN</a>
@@ -94,10 +99,7 @@ function App() {
       <section className="section">
         <div className="section_left">
           <h1>WINTER SPICE 2020</h1>
-          <p>
-            Infusion of summer pieces and cashmere
-            <br /> silk blends.
-          </p>
+          <p>Infusion of summer pieces and cashmere silk blends.</p>
           <button className="btn">SHOP NOW</button>
         </div>
         <div className="section_right">
@@ -375,7 +377,7 @@ function App() {
             </div>
           </div>
         </div>
-        <p>All content Copyright © 2020 GOBI Cashmere</p>
+        <p className="copyright">All content Copyright © 2020 GOBI Cashmere</p>
       </div>
     </div>
   );
