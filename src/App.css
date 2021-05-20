@@ -517,11 +517,12 @@
     display: block;
     align-self: center;
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .catName > h2 {
     display: none;
   }
-  .catitems > div:last-child {
+  .catItems > .catItem:last-of-type {
     display: none;
   }
 }
