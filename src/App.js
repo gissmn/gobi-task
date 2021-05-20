@@ -107,20 +107,26 @@ function App() {
         </div>
       </section>
       <div className="category">
-        <CategoryItem name="cardigans" />
-        <div className="catName">
-          <h2>WOMEN</h2>
-          <CategoryItem name="dress" />
+        <h2>WOMEN</h2>
+        <div className="catItems">
+          <CategoryItem name="cardigans" />
+          <div className="catName">
+            <h2>WOMEN</h2>
+            <CategoryItem name="dress" />
+          </div>
+          <CategoryItem name="cardigans" />
         </div>
-        <CategoryItem name="cardigans" />
       </div>
       <div className="category">
-        <CategoryItem name="turtleneck" />
-        <div className="catName">
-          <h2>MEN</h2>
-          <CategoryItem name="polo" />
+        <h2>MEN</h2>
+        <div className="catItems">
+          <CategoryItem name="turtleneck" />
+          <div className="catName">
+            <h2>MEN</h2>
+            <CategoryItem name="polo" />
+          </div>
+          <CategoryItem name="turtleneck" />
         </div>
-        <CategoryItem name="turtleneck" />
       </div>
       <div className="products">
         <h2>TO GET AND TO GIFT</h2>
