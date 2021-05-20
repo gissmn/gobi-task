@@ -9,15 +9,8 @@ import {
 import { BsBagFill, BsSearch } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "./gobi.svg";
-import pic from "./assets/img/side1.png";
-import pic1 from "./assets/img/side2.png";
-import pic2 from "./assets/img/side3.png";
-import card from "./assets/img/cardigans.png";
-import dress from "./assets/img/dress.png";
-import polo from "./assets/img/polo.png";
-import turtleneck from "./assets/img/turtleneck.png";
-import store from "./assets/img/about-us-store.png";
-import aboutUS from "./assets/img/about-us.png";
+
+import ImageComp from "./components/ImageComp";
 
 function App() {
   return (
@@ -105,21 +98,11 @@ function App() {
         <div className="section_right">
           <div className="section_right_pic">
             <div>
-              <img
-                className="img"
-                alt="1"
-                src={pic}
-                style={{ marginRight: "5px" }}
-              />
+              <ImageComp name="side1" />
             </div>
             <div>
-              <img
-                className="img"
-                alt="2"
-                src={pic1}
-                style={{ marginBottom: "5px" }}
-              />
-              <img className="img" alt="3" src={pic2} />
+              <ImageComp name="side2" />
+              <ImageComp name="side3" />
             </div>
           </div>
           <div className="section_right_text">
@@ -129,7 +112,7 @@ function App() {
       </section>
       <div className="category">
         <div className="catItem">
-          <img className="img" alt="1" src={card} />
+          <ImageComp name="cardigans" />
           <div className="arrow">
             CARDIGANS
             <VscArrowRight style={{ cursor: "pointer" }} />
@@ -138,7 +121,7 @@ function App() {
         <div className="catName">
           <h2>WOMEN</h2>
           <div className="catItem">
-            <img className="img" alt="2" src={dress} />
+            <ImageComp name="dress" />
             <div className="arrow">
               DRESS
               <VscArrowRight style={{ cursor: "pointer" }} />
@@ -146,7 +129,7 @@ function App() {
           </div>
         </div>
         <div className="catItem">
-          <img className="img" alt="3" src={card} />
+          <ImageComp name="cardigans" />
           <div className="arrow">
             CARDIGANS
             <VscArrowRight style={{ cursor: "pointer" }} />
@@ -155,7 +138,7 @@ function App() {
       </div>
       <div className="category">
         <div className="catItem">
-          <img className="img" alt="1" src={turtleneck} />
+          <ImageComp name="turtleneck" />
           <div className="arrow">
             TURTLENECK
             <VscArrowRight style={{ cursor: "pointer" }} />
@@ -164,7 +147,7 @@ function App() {
         <div className="catName">
           <h2>MEN</h2>
           <div className="catItem">
-            <img className="img" alt="2" src={polo} />
+            <ImageComp name="polo" />
             <div className="arrow">
               POLO
               <VscArrowRight style={{ cursor: "pointer" }} />
@@ -172,7 +155,7 @@ function App() {
           </div>
         </div>
         <div className="catItem">
-          <img className="img" alt="3" src={turtleneck} />
+          <ImageComp name="turtleneck" />
           <div className="arrow">
             TURTLENECK
             <VscArrowRight style={{ cursor: "pointer" }} />
@@ -183,7 +166,7 @@ function App() {
         <h2>TO GET AND TO GIFT</h2>
         <div className="productItems">
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-1" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -192,7 +175,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-2" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -201,7 +184,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-3" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -210,7 +193,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-4" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -219,7 +202,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-5" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -228,7 +211,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-6" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -237,7 +220,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-7" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -246,7 +229,7 @@ function App() {
             </p>
           </div>
           <div className="productItem">
-            <img className="img" src={polo} alt="polo" />
+            <ImageComp name="product-8" />
             <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
             <p>+6 colors</p>
             <p>
@@ -258,11 +241,11 @@ function App() {
       </div>
       <div className="aboutUs">
         <div className="about_left">
-          <img className="img" src={store} alt="store" />
-          <div className="abts">
-            <img src={aboutUS} className="img abt" alt="abt" />
-            <img src={aboutUS} className="img abt" alt="abt" />
-          </div>
+          <ImageComp name="about-us-store" />
+          {/* <div className="abts">
+            <ImageComp name="about-us" />
+            <ImageComp name="about-us" />
+          </div> */}
         </div>
         <div className="about_right">
           <h2>ABOUT US</h2>
