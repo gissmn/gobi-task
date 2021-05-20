@@ -1,7 +1,22 @@
 import "./App.css";
-import { VscGlobe, VscHeart, VscChromeClose } from "react-icons/vsc";
+import {
+  VscGlobe,
+  VscHeart,
+  VscChromeClose,
+  VscArrowRight,
+} from "react-icons/vsc";
 import { BsBagFill } from "react-icons/bs";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "./gobi.svg";
+import pic from "./assets/img/side1.png";
+import pic1 from "./assets/img/side2.png";
+import pic2 from "./assets/img/side3.png";
+import card from "./assets/img/cardigans.png";
+import dress from "./assets/img/dress.png";
+import polo from "./assets/img/polo.png";
+import turtleneck from "./assets/img/turtleneck.png";
+import store from "./assets/img/about-us-store.png";
+import aboutUS from "./assets/img/about-us.png";
 
 function App() {
   return (
@@ -46,7 +61,7 @@ function App() {
           </div>
           <div className="userPanel">
             <div className="search">
-              <input placeholder="Search" />
+              <input className="input " placeholder="Search" />
               <VscChromeClose className="searchBtn" />
             </div>
             <div className="userBtn">
@@ -76,6 +91,292 @@ function App() {
           </div>
         </div>
       </header>
+      <section className="section">
+        <div className="section_left">
+          <h1>WINTER SPICE 2020</h1>
+          <p>
+            Infusion of summer pieces and cashmere
+            <br /> silk blends.
+          </p>
+          <button className="btn">SHOP NOW</button>
+        </div>
+        <div className="section_right">
+          <div className="section_right_pic">
+            <div>
+              <img
+                className="img"
+                alt="1"
+                src={pic}
+                style={{ marginRight: "5px" }}
+              />
+            </div>
+            <div>
+              <img
+                className="img"
+                alt="2"
+                src={pic1}
+                style={{ marginBottom: "5px" }}
+              />
+              <img className="img" alt="3" src={pic2} />
+            </div>
+          </div>
+          <div style={{ alignSelf: "flex-end" }}>
+            Infusion of summer pieces and cashmere silk blends.
+          </div>
+        </div>
+      </section>
+      <div className="category">
+        <div className="catItem">
+          <img className="img" alt="1" src={card} />
+          <div className="arrow">
+            CARDIGANS
+            <VscArrowRight style={{ cursor: "pointer" }} />
+          </div>
+        </div>
+        <div className="catName">
+          <h2>WOMEN</h2>
+          <div className="catItem">
+            <img className="img" alt="2" src={dress} />
+            <div className="arrow">
+              DRESS
+              <VscArrowRight style={{ cursor: "pointer" }} />
+            </div>
+          </div>
+        </div>
+        <div className="catItem">
+          <img className="img" alt="3" src={card} />
+          <div className="arrow">
+            CARDIGANS
+            <VscArrowRight style={{ cursor: "pointer" }} />
+          </div>
+        </div>
+      </div>
+      <div className="category">
+        <div className="catItem">
+          <img className="img" alt="1" src={turtleneck} />
+          <div className="arrow">
+            TURTLENECK
+            <VscArrowRight style={{ cursor: "pointer" }} />
+          </div>
+        </div>
+        <div className="catName">
+          <h2>MEN</h2>
+          <div className="catItem">
+            <img className="img" alt="2" src={polo} />
+            <div className="arrow">
+              POLO
+              <VscArrowRight style={{ cursor: "pointer" }} />
+            </div>
+          </div>
+        </div>
+        <div className="catItem">
+          <img className="img" alt="3" src={turtleneck} />
+          <div className="arrow">
+            TURTLENECK
+            <VscArrowRight style={{ cursor: "pointer" }} />
+          </div>
+        </div>
+      </div>
+      <div className="products">
+        <h2>TO GET AND TO GIFT</h2>
+        <div className="productItems">
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+          <div className="productItem">
+            <img className="img" src={polo} alt="polo" />
+            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
+            <p>+6 colors</p>
+            <p>
+              <span className="price">$ 299.00</span>
+              <span className="discount">$ 79.00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="aboutUs">
+        <div className="about_left">
+          <img className="img" src={store} alt="store" />
+          <div className="abts">
+            <img src={aboutUS} className="img abt" alt="abt" />
+            <img src={aboutUS} className="img abt" alt="abt" />
+          </div>
+        </div>
+        <div className="about_right">
+          <h2>ABOUT US</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+            temporibus minima maxime maiores hic excepturi dolores officia.
+            Autem, facere quia quis aut aliquid illo adipisci sint qui. Dolorem,
+            beatae repudiandae!
+          </p>
+          <button className="btn dark">READ MORE</button>
+        </div>
+      </div>
+      <div className="subscribe">
+        <h2>Subscribe</h2>
+        <p>
+          Sign up for emails and receive early access to new arrivals, sales,
+          events + more.
+        </p>
+        <div className="email">
+          <input className="input" placeholder="Enter your email address" />
+          <button className="btn dark">SUBMIT</button>
+        </div>
+        <p>
+          By signing up, you will receive Gobi Cashmere offers, promotions and
+          other commercial messages. You are also agreeing to Gobi Cashmere's{" "}
+          <a href="/">Privacy Policy</a>. You may unsubscribe at any time.
+        </p>
+      </div>
+      <div className="footer">
+        <div className="footer_menu">
+          <div className="footer_left">
+            <div className="footer_item">
+              <h3>ABOUT US</h3>
+              <a className="link" href="/">
+                Our History
+              </a>
+              <a className="link" href="/">
+                Product Care
+              </a>
+              <a className="link" href="/">
+                Store Location
+              </a>
+              <a className="link" href="/">
+                Sustainability
+              </a>
+            </div>
+            <div className="footer_item">
+              <h3>POLICY</h3>
+              <a className="link" href="/">
+                Shipping & Return Policy
+              </a>
+              <a className="link" href="/">
+                Privacy Policy
+              </a>
+              <a className="link" href="/">
+                Impressum
+              </a>
+              <a className="link" href="/">
+                Return Portal
+              </a>
+            </div>
+            <div className="footer_item">
+              <h3>CUSTOMER SERVICE</h3>
+              <a className="link" href="/">
+                General Terms and Conditions
+              </a>
+              <a className="link" href="/">
+                Contact Us
+              </a>
+              <a className="link" href="/">
+                News
+              </a>
+              <a className="link" href="/">
+                FAQ
+              </a>
+            </div>
+            <div className="footer_item">
+              <h3>CUSTOMER SERVICE</h3>
+              <a className="link" href="/">
+                General Terms and Conditions
+              </a>
+              <a className="link" href="/">
+                Contact Us
+              </a>
+              <a className="link" href="/">
+                News
+              </a>
+              <a className="link" href="/">
+                FAQ
+              </a>
+            </div>
+          </div>
+          <div className="social_menu">
+            <div className="footer_item">
+              <h3>FOLLOW US</h3>
+              <a className="link" href="/">
+                <FaFacebookF />
+              </a>
+              <a className="link" href="/">
+                <FaInstagram />
+              </a>
+              <a className="link" href="/">
+                <FaTwitter />
+              </a>
+              <a className="link" href="/">
+                <FaYoutube />
+              </a>
+              <div className="language">
+                <span>Global - English</span>
+                <VscGlobe size="1.5rem" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>All content Copyright © 2020 GOBI Cashmere</p>
+      </div>
     </div>
   );
 }
