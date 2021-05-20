@@ -11,6 +11,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "./gobi.svg";
 
 import ImageComp from "./components/ImageComp";
+import ProductItem from "./components/ProductItem";
 
 function App() {
   return (
@@ -165,78 +166,14 @@ function App() {
       <div className="products">
         <h2>TO GET AND TO GIFT</h2>
         <div className="productItems">
-          <div className="productItem">
-            <ImageComp name="product-1" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-2" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-3" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-4" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-5" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-6" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-7" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
-          <div className="productItem">
-            <ImageComp name="product-8" />
-            <p>Zweiseitger Wendemantel Mit Schmetterlingsxzds</p>
-            <p>+6 colors</p>
-            <p>
-              <span className="price">$ 299.00</span>
-              <span className="discount">$ 79.00</span>
-            </p>
-          </div>
+          <ProductItem name="product-1" />
+          <ProductItem name="product-2" />
+          <ProductItem name="product-3" />
+          <ProductItem name="product-4" />
+          <ProductItem name="product-5" />
+          <ProductItem name="product-6" />
+          <ProductItem name="product-7" />
+          <ProductItem name="product-8" />
         </div>
       </div>
       <div className="aboutUs">
