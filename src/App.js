@@ -1,17 +1,12 @@
 import "./App.css";
-import {
-  VscGlobe,
-  VscHeart,
-  VscChromeClose,
-  VscArrowRight,
-  VscMenu,
-} from "react-icons/vsc";
+import { VscGlobe, VscHeart, VscChromeClose, VscMenu } from "react-icons/vsc";
 import { BsBagFill, BsSearch } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "./gobi.svg";
 
 import ImageComp from "./components/ImageComp";
 import ProductItem from "./components/ProductItem";
+import CategoryItem from "./components/CategoryItem";
 
 function App() {
   return (
@@ -112,56 +107,20 @@ function App() {
         </div>
       </section>
       <div className="category">
-        <div className="catItem">
-          <ImageComp name="cardigans" />
-          <div className="arrow">
-            CARDIGANS
-            <VscArrowRight style={{ cursor: "pointer" }} />
-          </div>
-        </div>
+        <CategoryItem name="cardigans" />
         <div className="catName">
           <h2>WOMEN</h2>
-          <div className="catItem">
-            <ImageComp name="dress" />
-            <div className="arrow">
-              DRESS
-              <VscArrowRight style={{ cursor: "pointer" }} />
-            </div>
-          </div>
+          <CategoryItem name="dress" />
         </div>
-        <div className="catItem">
-          <ImageComp name="cardigans" />
-          <div className="arrow">
-            CARDIGANS
-            <VscArrowRight style={{ cursor: "pointer" }} />
-          </div>
-        </div>
+        <CategoryItem name="cardigans" />
       </div>
       <div className="category">
-        <div className="catItem">
-          <ImageComp name="turtleneck" />
-          <div className="arrow">
-            TURTLENECK
-            <VscArrowRight style={{ cursor: "pointer" }} />
-          </div>
-        </div>
+        <CategoryItem name="turtleneck" />
         <div className="catName">
           <h2>MEN</h2>
-          <div className="catItem">
-            <ImageComp name="polo" />
-            <div className="arrow">
-              POLO
-              <VscArrowRight style={{ cursor: "pointer" }} />
-            </div>
-          </div>
+          <CategoryItem name="polo" />
         </div>
-        <div className="catItem">
-          <ImageComp name="turtleneck" />
-          <div className="arrow">
-            TURTLENECK
-            <VscArrowRight style={{ cursor: "pointer" }} />
-          </div>
-        </div>
+        <CategoryItem name="turtleneck" />
       </div>
       <div className="products">
         <h2>TO GET AND TO GIFT</h2>
